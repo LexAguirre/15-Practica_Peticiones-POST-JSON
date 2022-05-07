@@ -33,10 +33,14 @@ app.post("/student", express.urlencoded({ extended: false }), (req, res) => {
   res.send(`First Name es: ${req.body.fname}, Last Name es: ${req.body.lname}`);
 });
 
+// Envia un string que contiene el fname y el lname
+
 app.post("/personjson", express.json({ type: "*/*" }), (req, res) => {
   console.log("El objeto contiene: ", req.body);
   console.log("Nombre: ", req.body.firstName);
   console.log("Apellido: ", req.body.lastName);
 });
+
+//ahora dentro de la consola se imprimira tres diferentes textos el primero imprimira todo lo que contiene body, el segundo contiene lo ingresado en firstName pero no en los imput sino en $.ajax y es el mismo caso para lastName.
 
 app.listen(port);

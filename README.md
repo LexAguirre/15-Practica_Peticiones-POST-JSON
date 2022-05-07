@@ -1,6 +1,6 @@
 ![Logo](img/ucol-logo.jpg)
 
-# Práctica 14: POST Requests
+# Práctica 15: POST REQUESTS + JSON
 
 > Segunda Parcial
 
@@ -23,7 +23,7 @@ Agregaremos un nuevo endpoint y su correspondiente route handler para “Parsear
 
 ## EXPLICACIÓN DEL PROCESO
 
-1. Crea una carpeta llamada "practica_14"
+1. Crea una carpeta llamada "practica_15
 
 2. Inicializa NPM con npm init -y
 
@@ -33,7 +33,7 @@ Agregaremos un nuevo endpoint y su correspondiente route handler para “Parsear
 
 5. Crea un nuevo archivo server.js en el cual se le pasara todo el codigo hecho en la practica anterior
 
-6. Crea una nueva carpeta llamada "public" dentro de la carpeta "practica_13"
+6. Crea una nueva carpeta llamada "public" dentro de la carpeta "practica_15"
 
 7. Dentro de la carpeta "public" crea un nuevo archivo style.css
 
@@ -45,15 +45,19 @@ Agregaremos un nuevo endpoint y su correspondiente route handler para “Parsear
 
 11. Ahora en el archivo server.js se colocara un html basico dentro del app.get de la pagina principal del servidor
 
-12. En el archivo index.ejs se creara un formulario para dos elementos el nombre y el apellido pero ademas se tendra un boton que realizara un Submit
+12. En el archivo index.ejs se creara un formulario para dos elementos el nombre, segundo nombre y el apellido pero ademas se tendra un boton que realizara un Submit
 
 13. Pasando al archivo server.js se creara un app.post el cual se ubicara en la direccion /student y lo que enviara es el primer nombre y el apellido en un string (Siendo que anterior mente se tomo el dato del index.ejs)
 
 14. En el app.get de student se colocara un render de index
 
-15. Ahora se ejecuta el comando "npx nodemon server en la terminal y acccede a http://localhost:3000/student para observar el resultado
+15. Se creara un script donde se usa ajax para hacer una petición asíncrona pero se debe configurar donde debemos poner como le va a responder (post) url donde se consulta, datos que responden, tipo de dato que está viajando.
 
-16. Por ultimo se puede proba ingresar informacion en los cuadros de textos y al precionar el boton se podra observar el resultado
+16. En el index agregaremos el CDN para JQuery
+
+17. Ahora se ejecuta el comando "npx nodemon server en la terminal y acccede a http://localhost:3000/student para observar el resultado
+
+18. Por ultimo se puede proba ingresar informacion en los cuadros de textos y al precionar el boton se podra observar el resultado y tambien en la consola podras observar la informacion que se imprimio del $.ajax
 
 ## RECURSOS
 
